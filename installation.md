@@ -11,3 +11,5 @@
 8. in the setting.py file add the app to INSTALLED APPS -> '<app_name>.apps.<appName>Config'
 9. Migrate Project -> python manage.py migrate
 10. Run server with -> py manage.py runserver
+## Admin setup
+11. Create super user ->  python manage.py createsuperuser
