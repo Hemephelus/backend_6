@@ -10,6 +10,5 @@ def home(request):
 
 
 def latest_post(request):
-    lastRow = len(Post.objects.all())
-    post = Post.objects.all()[lastRow-1]
+    post = Post.objects.last()
     return render(request,'my_assignment_app/post.html', {'post':post})
